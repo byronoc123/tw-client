@@ -1,0 +1,65 @@
+# .dockerignore file for blockchain client
+
+# Git
+.git
+.gitignore
+.github
+
+# Build artifacts
+bin/
+build/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Environment files (except templates)
+.env*
+!.env.example
+
+# Terraform
+terraform/
+.terraform/
+terraform.tfstate*
+*.tfvars
+
+# CI/CD and documentation
+.github/
+docs/
+*.md
+!README.md
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Go test cache and coverage files
+*.coverprofile
+coverage.txt
+coverage.html
+
+# Temporary files
+**/tmp/
+temp/
+tmp/
+.DS_Store
+
+# Local development scripts
+scripts/
+
+# Dependency directories (let Docker handle these)
+vendor/
+
+# Log files
+*.log
+logs/
